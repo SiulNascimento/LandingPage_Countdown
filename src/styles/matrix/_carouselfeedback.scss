@@ -1,5 +1,13 @@
 #carouselExample {
     background-color: rgb(25, 135, 84);
+
+    @media (min-width: 640px) and (max-width: 1024px){ 
+        background-color: rgb(53, 245, 155);
+    }
+
+    @media (max-width: 640px) { 
+        background-color: rgb(3, 41, 23);
+    }
 }
 
 .cards-wrapper {
@@ -8,7 +16,18 @@
 
     .card {
         margin: 16px;
-        width: calc(100%/3);
+        width: 0 0 calc(100%/3);
+
+        @media (min-width: 640px) and (max-width: 1024px){
+            display: none;
+            margin: 1em auto;
+            width: 50%;
+        }
+
+        @media (max-width: 640px) {
+            margin: 1em auto;
+            width: calc(100%/1);
+        }
 
         img {
             max-width: 286px;
@@ -16,5 +35,4 @@
         }
     }
 }
-
 
