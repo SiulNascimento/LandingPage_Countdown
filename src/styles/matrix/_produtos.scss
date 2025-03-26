@@ -7,6 +7,19 @@
     display: flex;
     justify-content: center;
 
+    @media (min-width: 640px) and (max-width: 1024px){ 
+        background-color: rgb(3, 41, 23);
+    }
+
+    @media (max-width: 640px) { 
+        background-color:rgb(53, 245, 155);
+        color: #fff;
+
+        button {
+            color: #fff;
+        }
+    }
+
     .containerProdutos {
         @include boxes;
         text-align: center; 
@@ -19,11 +32,35 @@
             height: 200px;
             width: 100%;
 
+            @media (min-width: 640px) and (max-width: 1024px){
+                max-width: 100%;
+            }
+
+            @media (max-width: 640px) {
+                max-width: 100%;
+            }
         }
 
         button {
             padding: 8px;
             margin: 12px auto;
         }
+
+        
+        @media (min-width: 640px) and (max-width: 1024px){
+            display:flex;
+            flex-direction: column;
+            max-width: 100%;
+
+            p{
+                color: #fff;
+            }
+        }
+
+        @media (max-width: 640px) {
+            display:flex;
+            max-width: 100%;
+        }
     }
+
 }
