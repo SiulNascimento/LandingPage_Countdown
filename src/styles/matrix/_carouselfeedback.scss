@@ -1,0 +1,20 @@
+#carouselExample {
+    background-color: rgb(25, 135, 84);
+}
+
+.cards-wrapper {
+    display: flex;
+    justify-content: center;
+
+    .card {
+        margin: 16px;
+        width: calc(100%/3);
+
+        img {
+            max-width: 286px;
+            height: 286px;
+        }
+    }
+}
+
+

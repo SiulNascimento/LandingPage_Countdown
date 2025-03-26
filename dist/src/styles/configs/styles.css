@@ -1,0 +1,233 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Pacifico, cursive;
+}
+
+.hero {
+  opacity: .7;
+  background-image: url("../../../bolo1.4d2bc480.jpg");
+  background-position-y: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 0;
+  padding-bottom: 100px;
+}
+
+.hero__title {
+  color: #fff;
+  text-align: center;
+  margin: 48px auto;
+  font-size: 42px;
+  display: block;
+}
+
+.hero__text {
+  color: #fff;
+  text-align: center;
+  margin: 48px auto;
+  font-size: 32px;
+  display: block;
+}
+
+.hero__img {
+  width: 200px;
+  margin: 80px auto;
+  display: block;
+}
+
+.hero-bar {
+  color: #575252;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 20px;
+  margin: 48px auto;
+  padding: 16px 24px;
+  font-size: 18px;
+  display: block;
+}
+
+.hero-bar__infos {
+  color: #000;
+  justify-content: space-between;
+  gap: 20px;
+  list-style: none;
+  display: flex;
+}
+
+.hero-bar__infos-items {
+  padding: 8px;
+  font-size: 14px;
+}
+
+.hero-bar__infos-items b {
+  font-size: 18px;
+  display: block;
+}
+
+.hero-bar__button {
+  text-align: center;
+  white-space: nowrap;
+  padding: 12px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+@media (width <= 640px) {
+  .hero-bar__button {
+    width: 100%;
+    display: block;
+  }
+}
+
+@media (width <= 1024px) {
+  .hero-bar__button {
+    align-items: center;
+    display: flex;
+  }
+}
+
+.hero__countdown {
+  color: #000;
+  text-align: center;
+  margin: 48px auto;
+  font-size: 32px;
+  display: block;
+}
+
+.footer {
+  padding: 26px 8px;
+}
+
+.footer__container {
+  text-align: center;
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+
+.footer__logo {
+  width: 80px;
+  margin: 0 auto 10px;
+}
+
+.footer__links {
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 16px;
+  display: flex;
+}
+
+.footer__links__item {
+  display: inline-block;
+}
+
+.footer__links__item a {
+  padding: 8px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.footer__links__item a:hover {
+  color: #198754;
+}
+
+.footer p {
+  margin-bottom: 16px;
+}
+
+.language-selector {
+  align-items: center;
+  display: flex;
+}
+
+.language-selector img {
+  width: 18px;
+  height: 18px;
+}
+
+.language-selector select {
+  color: #198754;
+  background-color: #0000;
+  border: none;
+  height: 38px;
+}
+
+.language-selector select:hover {
+  color: #198754;
+}
+
+.language-selector select option {
+  color: #000;
+}
+
+.container {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+@media (width <= 640px) {
+  .container {
+    max-width: 80%;
+  }
+}
+
+@media (width <= 1024px) {
+  .container {
+    max-width: 90%;
+  }
+}
+
+.container-produtos {
+  justify-content: center;
+  display: flex;
+}
+
+.container-produtos .containerProdutos {
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 12px auto;
+  padding: 12px;
+  display: flex;
+}
+
+.container-produtos .containerProdutos img {
+  width: 100%;
+  max-width: 240px;
+  height: 200px;
+}
+
+.container-produtos .containerProdutos button {
+  margin: 12px auto;
+  padding: 8px;
+}
+
+#carouselExample {
+  background-color: #198754;
+}
+
+.cards-wrapper {
+  justify-content: center;
+  display: flex;
+}
+
+.cards-wrapper .card {
+  width: 33.3333%;
+  margin: 16px;
+}
+
+.cards-wrapper .card img {
+  max-width: 286px;
+  height: 286px;
+}
+
+#carousel_event img {
+  width: 100%;
+  max-height: 1024px;
+}
+/*# sourceMappingURL=styles.css.map */

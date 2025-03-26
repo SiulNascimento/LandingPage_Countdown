@@ -1,0 +1,29 @@
+@mixin boxes () {
+    padding: 12px;
+    margin: 12px auto;
+}
+
+.container-produtos {
+    display: flex;
+    justify-content: center;
+
+    .containerProdutos {
+        @include boxes;
+        text-align: center; 
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+
+        img {
+            max-width: 240px;
+            height: 200px;
+            width: 100%;
+
+        }
+
+        button {
+            padding: 8px;
+            margin: 12px auto;
+        }
+    }
+}

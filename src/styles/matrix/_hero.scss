@@ -1,0 +1,88 @@
+@mixin text_configs () {
+    margin: 48px auto;
+    color: #ffffff;
+    display: block;
+    text-align: center;
+    font-size: 32px;
+}
+
+@mixin text_configs2 () {
+    margin: 48px auto;
+    color: #575252;
+    display: block;
+    text-align: center;
+    font-size: 18px;
+}
+
+
+.hero {
+    padding-top: 0px;
+    padding-bottom: 100px;
+    background-image: url(../../img/bolo1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: center;
+    opacity: 0.7;
+
+    &__title {
+        @include text_configs ();
+        font-size: 42px;
+    }
+
+    &__text {
+        @include text_configs ();
+    }
+
+    &__img {
+        margin: 80px auto;
+        width: 200px;
+        display: block;
+    }
+
+    &-bar {
+        padding: 16px 24px;
+        background-color: #ffff;
+        @include text_configs2;
+        border-radius: 20px;
+
+        &__infos {
+            list-style: none;
+            gap: 20px;
+            display: flex;
+            justify-content: space-between;
+            color: #000;
+
+            &-items {
+                font-size: 14px;
+                padding: 8px;
+
+                b {
+                    font-size: 18px;
+                    display: block;
+                }
+            }
+        }
+
+        &__button {
+            padding: 12px;
+            font-size: 18px;
+            font-weight: bold;
+            text-align: center;
+            white-space: nowrap;
+        
+            @media (max-width: 640px) {
+                display: block;
+                width: 100%;
+            }
+            @media (max-width: 1024px){
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
+
+    &__countdown {
+        @include text_configs;
+        color: #000;
+    }
+}
